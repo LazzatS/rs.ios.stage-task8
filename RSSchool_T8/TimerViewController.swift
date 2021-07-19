@@ -40,9 +40,7 @@ class TimerViewController: UIViewController {
         
         timer1 = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: false)
 
-        timer2 = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
-            print("Timer fired!")
-        }
+        timer2 = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in }
         
         
     }
@@ -98,13 +96,10 @@ class TimerViewController: UIViewController {
         let value = sender.value
         thumbSliderLabel.text = String(format: "%.2f s", value)
         chosenTime = Double(value)
-//        delegate?.didChooseTime(time: time)
-    
-//        fireTimer(time: CGFloat(value))
+
     }
     
     @objc func fireTimer() {
-        print("Timer fired!")
         runCount += 1
 
         if runCount == chosenTime {

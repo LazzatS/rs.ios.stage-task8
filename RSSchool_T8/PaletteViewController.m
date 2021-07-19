@@ -32,6 +32,8 @@
     [self createPaletteButton:@"PaletteDarkGreen" atX:265 Y:493 withWidth:24 withHeight:24];
     [self createPaletteButton:@"PaletteCherry" atX:325 Y:493 withWidth:24 withHeight:24];
     
+    [self createSaveButton];
+    
 }
 
 - (UIButton *) createPaletteButton:(NSString *)buttonColor atX:(CGFloat)x Y:(CGFloat)y withWidth:(CGFloat)width withHeight:(CGFloat)height {
@@ -46,6 +48,26 @@
     
     [self.view addSubview:buttonStyle];
     return buttonStyle;
+}
+
+- (UIButton *) createSaveButton {
+    UIButton *saveButton = [[UIButton alloc] init];
+    [saveButton setTitle:@"Save" forState:UIControlStateNormal];
+    [saveButton setTitleColor:[UIColor colorNamed:@"CustomGreenish"] forState:UIControlStateNormal];
+    saveButton.titleLabel.font = [UIFont fontWithName:@"Montserrat-Regular" size:18];
+    saveButton.frame = CGRectMake(250, 370, 85, 32);
+    saveButton.layer.cornerRadius = 10;
+    saveButton.layer.borderWidth = 1;
+    saveButton.layer.shadowRadius = 2;
+    saveButton.layer.shadowColor = [UIColor colorNamed:@"BlackOpaque"].CGColor;
+    saveButton.layer.borderColor = [UIColor colorNamed:@"BlackOpaque"].CGColor;
+    [saveButton addTarget:self action:@selector(saveButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:saveButton];
+    return saveButton;
+}
+
+- (IBAction)saveButtonTapped:(id)sender {
+    NSLog(@"save button palette tapped");
 }
 
 @end

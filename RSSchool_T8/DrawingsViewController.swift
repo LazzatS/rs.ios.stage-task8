@@ -25,7 +25,6 @@ import UIKit
         let navAttributes = [NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 17)]
         UINavigationBar.appearance().titleTextAttributes = navAttributes as [NSAttributedString.Key : Any]
         self.navigationController?.navigationBar.tintColor = UIColor(named: "CustomGreenish")
-        //self.view.backgroundColor = .yellow;
         
         var diff: CGFloat = 0
         

@@ -26,21 +26,14 @@ BOOL done = false;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //self.view.reloadInputViews;
-    
     self.view.backgroundColor = [UIColor whiteColor];
     
     if (_drawingChosen == NULL) {
         _drawingChosen = @"Head";
-    } else {
-        NSLog(@"SO the drawing to draw is %@", _drawingChosen);
     }
-    
-    NSLog(@"_drawingChosen is %@", _drawingChosen);
     
     idle = true;
     
-    //self.view.backgroundColor = [UIColor greenColor];
     UIFont *regularFont = [self useCustomFont:YES :NO];
     UIFont *mediumFont = [self useCustomFont:NO :YES];
     
@@ -76,13 +69,10 @@ BOOL done = false;
 }
 
 - (void)didChooseDrawingWithImageTitle:(NSString * _Nonnull)imageTitle {
-    NSLog(@"------------------------------------------ %@ ", imageTitle);
     _drawingChosen = imageTitle;
-    NSLog(@"NOW drawing is %@", _drawingChosen);
 }
 
 - (void)didChooseTimeWithTime:(double)time {
-    NSLog(@"****************************************** %f", time);
     _animationDuration = time;
 }
 
@@ -159,18 +149,15 @@ BOOL done = false;
     UIColor *color1 = [UIColor redColor];
     UIColor *color2 = [UIColor greenColor];
     UIColor *color3 = [UIColor blueColor];
-
-    NSLog(@"SOOOOO ******** %@", drawingTitle);
     
     [self createDrawingOnCanvas:canvas ofDrawing:drawingTitle withColor1:color1 withColor2:color2 withColor3:color3 withAnimationDuration:animationTime];
 }
 
 - (IBAction)shareTapped:(id)sender {
-    NSLog(@"share tapped");
+    
 }
 
 - (IBAction)timerTapped:(id)sender {
-    NSLog(@"timer tapped button tapped");
     _timerVC = [[TimerViewController alloc] init];
     _timerVC.delegate = self;
     [self.navigationController pushViewController:self.timerVC animated:YES];
