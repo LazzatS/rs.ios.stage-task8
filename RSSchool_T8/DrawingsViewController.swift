@@ -15,7 +15,7 @@ import UIKit
     
     @objc var delegate: DrawingSelectionDelegate?
     
-    var buttonTitles = ["Planet", "Head", "Tree", "LandScape"]
+    var buttonTitles = ["Planet", "Head", "Tree", "Landscape"]
     var buttons = [UIButton]()
     
     override func viewDidLoad() {

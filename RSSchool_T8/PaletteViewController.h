@@ -8,8 +8,12 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol ColorSelectionDelegate <NSObject>
+-(void) didChooseColor:(NSString *)colorName;
+@end
 
 @interface PaletteViewController : UIViewController
+@property (nonatomic, weak) id <ColorSelectionDelegate> delegate;
 
 @end
 

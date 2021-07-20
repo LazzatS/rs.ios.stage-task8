@@ -87,7 +87,7 @@ class TimerViewController: UIViewController {
         timeSlider.maximumValue = 5.0
         timeSlider.isContinuous = true
         timeSlider.tintColor = UIColor(named: "CustomGreenish")
-        timeSlider.addTarget(self, action: #selector(sliderDidSlide(_:)), for: .touchDragInside)
+        timeSlider.addTarget(self, action: #selector(sliderDidSlide(_:)), for: .touchUpInside)
         
         view.addSubview(timeSlider)
     }

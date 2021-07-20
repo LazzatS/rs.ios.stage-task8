@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124E35F026A4CBF000255E37 /* HeadShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 124E35EF26A4CBEF00255E37 /* HeadShape.m */; };
 		1282164526A5AC4F00924736 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282164426A5AC4F00924736 /* TimerViewController.swift */; };
 		12C9919426A60F5C005BAB44 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C9919326A60F5C005BAB44 /* PaletteViewController.m */; };
 		12E4643326A1E3B000479BBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E4643226A1E3B000479BBC /* AppDelegate.m */; };
@@ -21,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		124E35EE26A4CBEF00255E37 /* HeadShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadShape.h; sourceTree = "<group>"; };
-		124E35EF26A4CBEF00255E37 /* HeadShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadShape.m; sourceTree = "<group>"; };
 		1282164426A5AC4F00924736 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		12C9919226A60F5C005BAB44 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
 		12C9919326A60F5C005BAB44 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
@@ -86,13 +83,11 @@
 				12E4644326A1E3BD00479BBC /* main.m */,
 				12E4644C26A2C7E400479BBC /* DrawingsViewController.swift */,
 				1282164426A5AC4F00924736 /* TimerViewController.swift */,
-				12E4644B26A2C7E400479BBC /* RSSchool_T8-Bridging-Header.h */,
 				12E4645126A2CC7A00479BBC /* MainViewController.h */,
 				12E4645226A2CC7A00479BBC /* MainViewController.m */,
-				124E35EE26A4CBEF00255E37 /* HeadShape.h */,
-				124E35EF26A4CBEF00255E37 /* HeadShape.m */,
 				12C9919226A60F5C005BAB44 /* PaletteViewController.h */,
 				12C9919326A60F5C005BAB44 /* PaletteViewController.m */,
+				12E4644B26A2C7E400479BBC /* RSSchool_T8-Bridging-Header.h */,
 			);
 			path = RSSchool_T8;
 			sourceTree = "<group>";
@@ -183,7 +178,6 @@
 				1282164526A5AC4F00924736 /* TimerViewController.swift in Sources */,
 				12E4644D26A2C7E400479BBC /* DrawingsViewController.swift in Sources */,
 				12E4643626A1E3B000479BBC /* SceneDelegate.m in Sources */,
-				124E35F026A4CBF000255E37 /* HeadShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
